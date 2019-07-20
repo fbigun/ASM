@@ -1,0 +1,9 @@
+{
+  "name": "ASM: Airport subscription management",
+  "description": "机场订阅管理，可以轻松部署到Heroku",
+  "repository": "https://github.com/fbigun/asm",
+  "keywords": [
+    "python",
+    "bottle"
+  ]
+}

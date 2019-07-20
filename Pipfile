@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+yapf = "~=0.28"
+"flake8" = "~=3.7"
+pre-commit = "~=1.17"
+
+[packages]
+gunicorn = "~=19.9"
+bottle = "~=0.12"
+requests = "~=2.22"
+Werkzeug = "~=0.15"
+
+[requires]
+python_version = "3.6"

@@ -18,5 +18,9 @@ class SchemesError(BaseError):
     """连接协议不支持"""
 
 
+class SsrParserError(BaseError):
+    """ssr链接非法"""
+
+
 class codeError(BaseError):
     """文本编码非法"""

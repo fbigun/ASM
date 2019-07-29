@@ -16,3 +16,7 @@ class EnvError(BaseError):
 
 class SchemesError(BaseError):
     """连接协议不支持"""
+
+
+class codeError(BaseError):
+    """文本编码非法"""

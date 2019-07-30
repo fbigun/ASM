@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-from peewee import DatabaseProxy, Model, CharField, UUIDField, BooleanField, IntegerField, AutoField
+from peewee import DatabaseProxy, Model, CharField, UUIDField, BooleanField, IntegerField, DateTimeField
+
 from playhouse.db_url import connect
 
 from .const import DATABASE_URL
@@ -20,6 +21,7 @@ class SubjectUrl(BaseModel):
     url_type = CharField()
     history_url = CharField()
     deprecation = BooleanField()
+    latest = DateTimeField()
 
 
 class Ssr(BaseModel):
@@ -33,7 +35,7 @@ class Ssr(BaseModel):
     obfs_param = CharField()
     proto = CharField()
     proto_param = CharField()
-    latest = AutoField()
+    latest = DateTimeField()
 
 
 class Vmess(BaseModel):

@@ -40,6 +40,17 @@ class Ssr(BaseModel):
 
 class Vmess(BaseModel):
     name = CharField()
+    version = CharField()
+    server = CharField()
+    server_port = CharField()
+    uuid = UUIDField()
+    aid = IntegerField()
+    network = CharField()
+    fake_type = CharField()
+    host = CharField()
+    path = CharField()
+    tls = CharField()
+    latest = DateTimeField()
 
 
 database = connect(DATABASE_URL)

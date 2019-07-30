@@ -9,7 +9,7 @@ database_proxy = DatabaseProxy()
 
 class BaseModel(Model):
     '''一个基础 Model 作为全局使用，其他表均应建立其上'''
-    class Meta:
+    class Meta:     # yapf: disable
         database = database_proxy
 
 
